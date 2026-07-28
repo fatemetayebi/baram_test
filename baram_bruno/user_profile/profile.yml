@@ -1,0 +1,26 @@
+info:
+  name: profile
+  type: http
+  seq: 3
+
+http:
+  method: PUT
+  url: "{{SERVER}}account/profile/"
+  body:
+    type: json
+    data: |-
+      {
+        "username":"ftmm",
+        "email":"ftm@gmail.com",
+        "password":"12345678",
+        "password2":"12345678"
+      }
+  auth:
+    type: bearer
+    token: "{{TOKEN}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
