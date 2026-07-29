@@ -1,0 +1,34 @@
+info:
+  name: list
+  type: http
+  seq: 5
+
+http:
+  method: GET
+  url: "{{SERVER}}services/?name=vpn&service_types=سئو&is_active=true&search=security&page=1&page_size=20"
+  params:
+    - name: name
+      value: vpn
+      type: query
+    - name: service_types
+      value: سئو
+      type: query
+    - name: is_active
+      value: "true"
+      type: query
+    - name: search
+      value: security
+      type: query
+    - name: page
+      value: "1"
+      type: query
+    - name: page_size
+      value: "20"
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
