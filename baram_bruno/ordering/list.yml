@@ -1,11 +1,11 @@
 info:
-  name: delete
+  name: list
   type: http
-  seq: 2
+  seq: 5
 
 http:
-  method: DELETE
-  url: "{{SERVER}}services/delete/2/"
+  method: GET
+  url: "{{SERVER}}orders/"
   auth:
     type: bearer
     token: "{{TOKEN}}"

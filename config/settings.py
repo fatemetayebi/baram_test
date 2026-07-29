@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     # Local Applications
     'user_profile',
     'service',
+    'ordering',
 
     # Third Party Packages
     'rest_framework',
