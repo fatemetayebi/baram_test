@@ -48,8 +48,6 @@ INSTALLED_APPS = [
     # Third Party Packages
     'rest_framework',
     'rest_framework_simplejwt',
-    'allauth',
-    'allauth.account',
     'django_filters',
 
 ]
@@ -63,7 +61,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
